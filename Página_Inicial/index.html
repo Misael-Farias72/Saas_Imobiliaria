@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imóveis BA | Corretor de Imóveis - Aluguel e Venda</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="#topo" class="logo">
+      <span class="logo-icone">IB</span>
+      <span>Imóveis BA<small>CORRETOR DE IMÓVEIS</small></span>
+    </a>
+    <nav id="menuNav">
+      <ul>
+        <li><a href="#sobre">Sobre nós</a></li>
+        <li><a href="#corretor">O corretor</a></li>
+        <li><a href="#imoveis">Imóveis</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu">&#9776;</button>
+  </div>
+</header>
+
+<section class="hero" id="topo">
+  <div class="hero-inner">
+    <h1>Encontre o imóvel ideal para você</h1>
+    <p>Imóveis para alugar e comprar na região sul da Bahia, com atendimento próximo e personalizado.</p>
+
+    <form class="busca" id="formBusca">
+      <div class="campo">
+        <label for="negocio">Negócio</label>
+        <select id="negocio">
+          <option value="">Alugar ou vender</option>
+          <option value="aluguel">Alugar</option>
+          <option value="venda">Comprar</option>
+        </select>
+      </div>
+      <div class="campo">
+        <label for="local">Cidade / bairro</label>
+        <input type="text" id="local" placeholder="Ex: Ubaitaba">
+      </div>
+      <div class="campo">
+        <label for="valorMin">Valor mínimo</label>
+        <input type="text" id="valorMin" placeholder="R$ 0">
+      </div>
+      <div class="campo">
+        <label for="valorMax">Valor máximo</label>
+        <input type="text" id="valorMax" placeholder="R$ 0">
+      </div>
+      <button type="submit">Buscar</button>
+    </form>
+  </div>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="container">
+    <div class="titulo-secao">
+      <h2>Sobre nós</h2>
+      <p>Quem somos e como trabalhamos</p>
+    </div>
+    <div class="sobre-grid">
+      <div class="sobre-imagem">Foto / vídeo institucional</div>
+      <div class="sobre-texto">
+        <p>Somos uma imobiliária local com foco na região sul da Bahia, atuando na intermediação de imóveis para aluguel e venda com atendimento direto e transparente.</p>
+        <p>Acompanhamos cada cliente desde a busca até a assinatura do contrato, com opções que se encaixam em diferentes orçamentos e necessidades.</p>
+        <p>Este é um site protótipo, criado para servir de base às próximas etapas de desenvolvimento da plataforma.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="corretor" id="corretor">
+  <div class="container">
+    <div class="titulo-secao">
+      <h2>O corretor</h2>
+      <p>Quem cuida do seu atendimento</p>
+    </div>
+    <div class="corretor-card">
+      <div class="corretor-foto">FC</div>
+      <div class="corretor-info">
+        <h3>Nome do Corretor</h3>
+        <p class="cargo">Corretor de Imóveis - CRECI 00000</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="imoveis" id="imoveis">
+  <div class="container">
+    <div class="titulo-secao">
+      <h2>Imóveis</h2>
+      <p>Opções disponíveis para aluguel e venda</p>
+    </div>
+
+    <div class="abas">
+      <button class="aba-btn ativa" data-filtro="todos">Todos</button>
+      <button class="aba-btn" data-filtro="aluguel">Aluguel</button>
+      <button class="aba-btn" data-filtro="venda">Venda</button>
+    </div>
+
+    <div class="imoveis-grid" id="gridImoveis">
+      <div class="imovel-card" data-tipo="aluguel">
+        <div class="imovel-foto">Foto do imóvel</div>
+        <div class="imovel-corpo">
+          <span class="imovel-tag">Aluguel</span>
+          <h4>Apartamento 2 quartos</h4>
+          <p class="imovel-local">Centro, Ubaitaba - BA</p>
+          <p class="imovel-preco">R$ 900 / mês</p>
+          <div class="imovel-detalhes">
+            <span>2 quartos</span>
+            <span>1 banheiro</span>
+            <span>60 m²</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="imovel-card" data-tipo="venda">
+        <div class="imovel-foto">Foto do imóvel</div>
+        <div class="imovel-corpo">
+          <span class="imovel-tag">Venda</span>
+          <h4>Casa 3 quartos</h4>
+          <p class="imovel-local">Jardim Primavera, Ubaitaba - BA</p>
+          <p class="imovel-preco">R$ 280.000</p>
+          <div class="imovel-detalhes">
+            <span>3 quartos</span>
+            <span>2 banheiros</span>
+            <span>140 m²</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="imovel-card" data-tipo="aluguel">
+        <div class="imovel-foto">Foto do imóvel</div>
+        <div class="imovel-corpo">
+          <span class="imovel-tag">Aluguel</span>
+          <h4>Kitnet mobiliada</h4>
+          <p class="imovel-local">Centro, Ubaitaba - BA</p>
+          <p class="imovel-preco">R$ 550 / mês</p>
+          <div class="imovel-detalhes">
+            <span>1 quarto</span>
+            <span>1 banheiro</span>
+            <span>28 m²</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="imovel-card" data-tipo="venda">
+        <div class="imovel-foto">Foto do imóvel</div>
+        <div class="imovel-corpo">
+          <span class="imovel-tag">Venda</span>
+          <h4>Terreno 300 m²</h4>
+          <p class="imovel-local">Zona Rural, Ubaitaba - BA</p>
+          <p class="imovel-preco">R$ 95.000</p>
+          <div class="imovel-detalhes">
+            <span>Plano</span>
+            <span>Documentado</span>
+            <span>300 m²</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="imovel-card" data-tipo="venda">
+        <div class="imovel-foto">Foto do imóvel</div>
+        <div class="imovel-corpo">
+          <span class="imovel-tag">Venda</span>
+          <h4>Apartamento 3 quartos</h4>
+          <p class="imovel-local">Centro, Ubaitaba - BA</p>
+          <p class="imovel-preco">R$ 320.000</p>
+          <div class="imovel-detalhes">
+            <span>3 quartos</span>
+            <span>2 banheiros</span>
+            <span>95 m²</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="imovel-card" data-tipo="aluguel">
+        <div class="imovel-foto">Foto do imóvel</div>
+        <div class="imovel-corpo">
+          <span class="imovel-tag">Aluguel</span>
+          <h4>Casa 2 quartos com quintal</h4>
+          <p class="imovel-local">Bela Vista, Ubaitaba - BA</p>
+          <p class="imovel-preco">R$ 1.100 / mês</p>
+          <div class="imovel-detalhes">
+            <span>2 quartos</span>
+            <span>1 banheiro</span>
+            <span>80 m²</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contato" id="contato">
+  <div class="container">
+    <div class="titulo-secao">
+      <h2>Contato</h2>
+      <p>Fale com a gente e agende uma visita</p>
+    </div>
+    <div class="contato-grid">
+      <div class="contato-lista">
+        <div class="contato-item">
+          <div class="contato-icone">&#128222;</div>
+          <div>
+            <h4>Telefone / WhatsApp</h4>
+            <a href="https://wa.me/5573000000000" target="_blank">(73) 00000-0000</a>
+          </div>
+        </div>
+        <div class="contato-item">
+          <div class="contato-icone">&#9993;</div>
+          <div>
+            <h4>E-mail</h4>
+            <a href="mailto:contato@imoveisba.com.br">contato@imoveisba.com.br</a>
+          </div>
+        </div>
+        <div class="contato-item">
+          <div class="contato-icone">&#128205;</div>
+          <div>
+            <h4>Endereço</h4>
+            <p>Ubaitaba - BA</p>
+          </div>
+        </div>
+        <div class="contato-item">
+          <div class="contato-icone">@</div>
+          <div>
+            <h4>Redes sociais</h4>
+            <p>
+              <a href="#" target="_blank">Instagram</a> ·
+              <a href="#" target="_blank">Facebook</a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contato-form">
+        <form id="formContato">
+          <div class="linha">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" required>
+          </div>
+          <div class="linha">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="linha">
+            <label for="mensagem">Mensagem</label>
+            <textarea id="mensagem" required></textarea>
+          </div>
+          <button type="submit">Enviar mensagem</button>
+          <p class="form-msg" id="formMsg">Mensagem enviada. Em breve entraremos em contato.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="logo">
+      <span class="logo-icone">IB</span>
+      <span>Imóveis BA<small>CORRETOR DE IMÓVEIS</small></span>
+    </div>
+    <p>&copy; 2026 Imóveis BA - Todos os direitos reservados</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
